@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#adminLoginForm {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  width: 300px;
+}
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+input[type="text"], input[type="password"] {
+  width: 91.5%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3091d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2980b9;
+}
+
+/* pop up*/
+
+#toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 300px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.toast-icon svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.toast-message {
+  flex: 1;
+  color: #fff;
+}
+
+/* Success */
+.toast-success {
+  background-color: #28a745;
+}
+
+/* Error */
+.toast-error {
+  background-color: #dc3545;
+}

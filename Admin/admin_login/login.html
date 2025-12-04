@@ -1,0 +1,26 @@
+<!-- Admin/admin-login/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="/Admin/admin_login/login.css" />
+</head>
+<body>
+  <form id="adminLoginForm">
+    <h2>Admin Login</h2>
+    <input type="text" name="username" placeholder="Username" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="toast">
+    <div class="toast-icon"></div>
+    <div class="toast-message">Message</div>
+  </div>
+
+  <script src="../../config.js"></script>
+  <script src="/Admin/admin_login/login.js"></script>
+</body>
+</html>

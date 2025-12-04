@@ -1,0 +1,135 @@
+body {
+  background-color: #B3C8CF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav img{
+  height: 80px;
+  padding: 0px;
+  margin-left: 50px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.7rem,5vw,2.5rem);
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.dashboard-section {
+  padding: 25px;
+  background-color: #F1F0E8;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #6d6d6d;
+  margin-bottom: 30px;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#addEmployeeForm {
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+#addEmployeeButton {
+  margin-left: 10px; 
+  width: 150px;
+}
+
+
+.card {
+  border: 1px solid #cbcdce;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-body p {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.btn {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item.active {
+  background-color: #4f6971;
+  border-color: #516477;
+  color: #fff;
+  font-weight: bold;
+}
+
+input.form-control {
+  font-size: 0.95rem;
+}
+
+#editEmployeeForm {
+  border-top: 1px solid #dee2e6;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+
+
+/* pop up*/
+
+#toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 300px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.toast-icon svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.toast-message {
+  flex: 1;
+  color: #fff;
+}
+
+/* Success */
+.toast-success {
+  background-color: #28a745;
+}
+
+/* Error */
+.toast-error {
+  background-color: #dc3545;
+}
